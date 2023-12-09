@@ -1,0 +1,27 @@
+{
+  "name": "comet-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "turbo dev --parallel --continue",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "turbo format",
+    "release": "turbo release --concurrency=1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/config-conventional": "^18.4.0",
+    "husky": "^8.0.3",
+    "turbo": "^1.10.16"
+  }
+}

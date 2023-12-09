@@ -1,0 +1,31 @@
+{
+  "name": "web",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "TIMING=1 eslint --ext .ts,.astro,.js . --fix",
+    "lint:styles": "stylelint \"src/**/*.{astro,css}\" --fix",
+    "release": "semantic-release -e semantic-release-monorepo"
+  },
+  "dependencies": {
+    "astro": "^4.0.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.3.1",
+    "eslint-config": "^1.0.0",
+    "eslint-plugin-astro": "^0.30.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "postcss-html": "^1.5.0",
+    "prettier-config": "^1.0.0",
+    "prettier-plugin-astro": "^0.12.2",
+    "semantic-release-monorepo": "^7.0.5",
+    "stylelint-config": "^1.0.0",
+    "stylelint-config-html": "^1.1.0"
+  }
+}

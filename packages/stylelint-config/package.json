@@ -1,19 +1,20 @@
 {
-    "name": "stylelint-config",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "devDependencies": {
-        "eslint-config": "^1.0.0",
-        "prettier-config": "^1.0.0"
-    },
-    "scripts": {},
-    "keywords": [],
-    "author": "",
-    "license": "MIT",
-    "dependencies": {
-        "stylelint": "^16.2.1",
-        "stylelint-config-clean-order": "^5.4.1",
-        "stylelint-config-standard": "^36.0.0"
-    }
+  "name": "stylelint-config",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint-config": "^1.0.0",
+    "prettier-config": "^1.0.0",
+    "stylelint-config-clean-order": "^6.1.0"
+  },
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
 }
